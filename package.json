@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-owl",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "An tag about Hexo with media plug-in",
   "main": "index",
   "repository": {
@@ -10,7 +10,11 @@
   "keywords": [
     "hexo",
     "blog",
-    "niconico"
+    "niconico",
+    "youtube",
+    "bilibili",
+    "vimeo",
+    "tudou"
   ],
   "author": {
     "name": "Hsu Heng-Yu",
