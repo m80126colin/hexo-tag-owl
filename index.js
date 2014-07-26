@@ -1,4 +1,4 @@
-var videos = reqyure('./videos')
+var videos = require('./videos')
 // videos
 hexo.extend.tag.register('owl-youtube', videos.youtube);
 hexo.extend.tag.register('owl-niconico', videos.niconico);
