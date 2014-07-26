@@ -46,6 +46,8 @@ This component has addition class `owl-youtube`.
 
 ### Niconico ###
 
+This component has addition class `owl-niconico`.
+
 #### Usage ####
 
 ```
@@ -63,6 +65,8 @@ This component has addition class `owl-youtube`.
 ```
 
 ### Bilibili ###
+
+This component has addition class `owl-bilibili`.
 
 #### Usage ####
 
