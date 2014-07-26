@@ -76,7 +76,7 @@ This component has addition class `owl-bilibili`.
 {% owl-bilibili [bilibili id] %}
 ```
 
-* **bilibili id** - video id in Bilibili. you can input both `av247371` or `247371`.
+* **bilibili id** - video id in Bilibili. You can input both `av247371` and `247371`.
 
 #### Example ####
 
@@ -86,6 +86,8 @@ This component has addition class `owl-bilibili`.
 ```
 
 ### Vimeo ###
+
+This component has addition class `owl-vimeo`.
 
 #### Usage ####
 
@@ -102,3 +104,37 @@ This component has addition class `owl-bilibili`.
 ```
 
 ### Tudou ###
+
+This component has addition class `owl-tudou`.
+
+#### Usage ####
+
+```
+{% owl-tudou [tudou id] %}
+```
+
+* **tudou id** - video id in Tudou.
+
+#### Example ####
+
+```
+{% owl-tudou pRsx83aRLLs %}
+```
+
+### Youku ###
+
+This component has addition class `owl-youku`.
+
+#### Usage ####
+
+```
+{% owl-youku [youku id] %}
+```
+
+* **youku id** - video id in Youku. You can input both `id_XMTc3MzcxMjQw` and `XMTc3MzcxMjQw`.
+
+#### Example ####
+
+```
+{% owl-youku id_XMTc3MzcxMjQw %}
+```
