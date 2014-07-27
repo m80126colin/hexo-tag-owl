@@ -1,4 +1,5 @@
-var iframe_config = 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen';
+var iframe_config = 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen',
+    embed_config = 'type="application/x-shockwave-flash" quality="high" allowfullscreen="true"';
 
 // ------------------------------------
 // youtube 9:16
@@ -15,7 +16,7 @@ module.exports.niconico = function (args, content) {
       type = args[1] || 'thumb';
   // thumb
   if (type == 'thumb') {
-    return '<div class="owl-media owl-video owl-niconico niconico-thumb"><iframe src="http://ext.nicovideo.jp/thumb/' + id + '" scrolling="no" style="border:solid 1px #CCC;" ' + iframe_config + '></iframe></div>';
+    return '<div class="owl-media owl-video owl-niconico niconico-thumb"><iframe src="http://ext.nicovideo.jp/thumb/' + id + '" scrolling="no" ' + iframe_config + '></iframe></div>';
   }
   // watch
   return '<div class="owl-media owl-video owl-niconico niconico-watch"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/' + id + '"></script></div>';
@@ -27,7 +28,7 @@ module.exports.bilibili = function (args, content) {
   var id = args[0].match(/^(av|)(\d+)$/);
   if (id == null)
   	throw 'error! incorrect bilibibli id.';
-  return '<div class="owl-media owl-video owl-bilibili"><embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid=' + id[2] + '&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed></div>';
+  return '<div class="owl-media owl-video owl-bilibili"><embed  src="http://share.acg.tv/flash.swf" flashvars="aid=' + id[2] + '&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" ' + embed_config + '></embed></div>';
 }
 // ------------------------------------
 // vimeo
@@ -41,7 +42,7 @@ module.exports.vimeo = function (args, content) {
 // ------------------------------------
 module.exports.tudou = function (args, content) {
   var id = args[0];
-  return '<div class="owl-media owl-video owl-tudou"><embed src="http://www.tudou.com/v/' + id + '/&bid=05&resourceId=0_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"></embed></div>';
+  return '<div class="owl-media owl-video owl-tudou"><embed src="http://www.tudou.com/v/' + id + '/&bid=05&resourceId=0_05_05_99/v.swf" allowscriptaccess="always" wmode="opaque" ' + embed_config + '></embed></div>';
 }
 // ------------------------------------
 // youku
