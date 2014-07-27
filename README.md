@@ -6,12 +6,12 @@ A tag about [Hexo] with media plug-in.
 
 Support video embeded:
 
-* Youtube
-* Niconico
-* Bilibili
-* Vimeo
-* Tudou
-* Youku
+* [Youtube](https://www.youtube.com/)
+* [Niconico](http://www.nicovideo.jp/)
+* [Bilibili](http://www.bilibili.com/)
+* [Vimeo](https://vimeo.com/)
+* [Tudou](http://www.tudou.com/)
+* [Youku](http://www.youku.com/)
 
 # Installation #
 
