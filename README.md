@@ -1,6 +1,17 @@
 # hexo-tag-owl #
 
-An tag about Hexo with media plug-in.
+A tag about [Hexo] with media plug-in.
+
+## Feature ##
+
+Support video embeded:
+
+* Youtube
+* Niconico
+* Bilibili
+* Vimeo
+* Tudou
+* Youku
 
 # Installation #
 
@@ -76,7 +87,7 @@ This component has addition class `owl-bilibili`.
 {% owl-bilibili [bilibili id] %}
 ```
 
-* **bilibili id** - video id in Bilibili. You can input both `av247371` and `247371`.
+* **bilibili id** - video id in Bilibili. You can use either `av247371` or `247371`.
 
 #### Example ####
 
@@ -131,10 +142,12 @@ This component has addition class `owl-youku`.
 {% owl-youku [youku id] %}
 ```
 
-* **youku id** - video id in Youku. You can input both `id_XMTc3MzcxMjQw` and `XMTc3MzcxMjQw`.
+* **youku id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
 
 #### Example ####
 
 ```
 {% owl-youku id_XMTc3MzcxMjQw %}
 ```
+
+[Hexo]: http://hexo.io
