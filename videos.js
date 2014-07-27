@@ -1,9 +1,11 @@
+var iframe_config = 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen';
+
 // ------------------------------------
-// youtube
+// youtube 9:16
 // ------------------------------------
 module.exports.youtube = function (args, content) {
   var id = args[0];
-  return '<div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/' + id + '" frameborder="0" allowfullscreen></iframe></div>';
+  return '<div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // niconico
@@ -13,10 +15,10 @@ module.exports.niconico = function (args, content) {
       type = args[1] || 'thumb';
   // thumb
   if (type == 'thumb') {
-    return '<div class="owl-media owl-video owl-niconico niconico-thumb"><iframe width="312" height="230" src="http://ext.nicovideo.jp/thumb/' + id + '" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"></iframe></div>';
+    return '<div class="owl-media owl-video owl-niconico niconico-thumb"><iframe src="http://ext.nicovideo.jp/thumb/' + id + '" scrolling="no" style="border:solid 1px #CCC;" ' + iframe_config + '></iframe></div>';
   }
   // watch
-  return '<div class="owl-media owl-video owl-niconico niconico-watch"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/' + id + '?w=490&h=307"></script></div>';
+  return '<div class="owl-media owl-video owl-niconico niconico-watch"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/' + id + '"></script></div>';
 }
 // ------------------------------------
 // bilibili
@@ -32,7 +34,7 @@ module.exports.bilibili = function (args, content) {
 // ------------------------------------
 module.exports.vimeo = function (args, content) {
   var id = args[0];
-  return '<div class="owl-media owl-video owl-vimeo"><iframe src="//player.vimeo.com/video/' + id + '" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>';
+  return '<div class="owl-media owl-video owl-vimeo"><iframe src="//player.vimeo.com/video/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // tudou
@@ -46,5 +48,5 @@ module.exports.tudou = function (args, content) {
 // ------------------------------------
 module.exports.youku = function (args, content) {
   var id = args[0].match(/^(id_|)(.+)$/);
-  return '<div class="owl-media owl-video owl-youku"><iframe height="498" width="510" src="http://player.youku.com/embed/' + id[2] + '" frameborder="0" allowfullscreen></iframe></div>';
+  return '<div class="owl-media owl-video owl-youku"><iframe src="http://player.youku.com/embed/' + id[2] + '" ' + iframe_config + '></iframe></div>';
 }
