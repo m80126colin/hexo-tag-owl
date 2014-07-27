@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-owl",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An tag about Hexo with media plug-in",
   "main": "index",
   "repository": {
