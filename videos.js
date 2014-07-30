@@ -25,10 +25,11 @@ module.exports.niconico = function (args, content) {
 // bilibili
 // ------------------------------------
 module.exports.bilibili = function (args, content) {
-  var id = args[0].match(/^(av|)(\d+)$/);
+  var id = args[0].match(/^(av|)(\d+)$/),
+      page = args[1] || '1';
   if (id == null)
   	throw 'error! incorrect bilibibli id.';
-  return '<div class="owl-media owl-video owl-bilibili"><embed  src="http://share.acg.tv/flash.swf" flashvars="aid=' + id[2] + '&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" ' + embed_config + '></embed></div>';
+  return '<div class="owl-media owl-video owl-bilibili"><embed  src="http://static.hdslb.com/miniloader.swf" flashvars="aid=' + id[2] + '&page=' + page + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" ' + embed_config + '></embed></div>';
 }
 // ------------------------------------
 // vimeo

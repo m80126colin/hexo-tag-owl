@@ -4,7 +4,9 @@ A tag about [Hexo] with media plug-in.
 
 ## Feature ##
 
-Support video embeded:
+### Videos ###
+
+Support to embed videos from following website:
 
 * [Youtube](https://www.youtube.com/)
 * [Niconico](http://www.nicovideo.jp/)
@@ -12,6 +14,12 @@ Support video embeded:
 * [Vimeo](https://vimeo.com/)
 * [Tudou](http://www.tudou.com/)
 * [Youku](http://www.youku.com/)
+
+### Images ###
+
+Support to insert images from following:
+
+* Local images
 
 # Installation #
 
@@ -44,10 +52,10 @@ This component has addition class `owl-youtube`.
 #### Usage ####
 
 ```
-{% owl-youtube [youtube id] %}
+{% owl-youtube youtube_id %}
 ```
 
-* **youtube id** - video id on Youtube
+* **youtube_id** - video id on Youtube
 
 #### Example ####
 
@@ -62,10 +70,10 @@ This component has addition class `owl-niconico`.
 #### Usage ####
 
 ```
-{% owl-niconico [niconico id] [type] %}
+{% owl-niconico niconico_id [type] %}
 ```
 
-* **niconico id** - video id in Niconico.
+* **niconico_id** - video id in Niconico.
 * **type** - embeded type. There are only `thumb` and `watch` two options. Default is set as `thumb`.
     * `thumb`: set nico in thumb mode with extra class `niconico-thumb`
     * `watch`: set nico in watch mode with extra class `niconico-watch`
@@ -84,16 +92,18 @@ This component has addition class `owl-bilibili`.
 #### Usage ####
 
 ```
-{% owl-bilibili [bilibili id] %}
+{% owl-bilibili bilibili_id [page] %}
 ```
 
-* **bilibili id** - video id in Bilibili. You can use either `av247371` or `247371`.
+* **bilibili_id** - video id in Bilibili. You can use either `av247371` or `247371`.
+* **page** - if video have several clips, you can add a number indicated the video.
 
 #### Example ####
 
 ```
 {% owl-bilibili av247371 %}
 {% owl-bilibili 247371 %}
+{% owl-bilibili av367901 2 %}
 ```
 
 ### Vimeo ###
@@ -103,10 +113,10 @@ This component has addition class `owl-vimeo`.
 #### Usage ####
 
 ```
-{% owl-vimeo [vimeo id] %}
+{% owl-vimeo vimeo_id %}
 ```
 
-* **vimeo id** - video id in Vimeo.
+* **vimeo_id** - video id in Vimeo.
 
 #### Example ####
 
@@ -121,10 +131,10 @@ This component has addition class `owl-tudou`.
 #### Usage ####
 
 ```
-{% owl-tudou [tudou id] %}
+{% owl-tudou tudou_id %}
 ```
 
-* **tudou id** - video id in Tudou.
+* **tudou_id** - video id in Tudou.
 
 #### Example ####
 
@@ -139,10 +149,10 @@ This component has addition class `owl-youku`.
 #### Usage ####
 
 ```
-{% owl-youku [youku id] %}
+{% owl-youku youku_id %}
 ```
 
-* **youku id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
+* **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
 
 #### Example ####
 
@@ -150,7 +160,28 @@ This component has addition class `owl-youku`.
 {% owl-youku id_XMTc3MzcxMjQw %}
 ```
 
-# Sample Stylus #
+## Images ##
+
+### Local Images ###
+
+Insert your image from blog\'s path.
+
+#### Usage ####
+
+```
+{% owl-img image_path %}
+```
+
+* **image_path** - relative path from your blog.
+
+#### Example ####
+
+```
+{% owl-img img/img.jpg %}
+{% owl-img another-img.gif %}
+```
+
+## Sample Stylus ##
 
 Because the components are lack of CSS, everyone can add some CSS for one's preference. Here is the sample CSS written in stylus:
 
