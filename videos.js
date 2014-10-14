@@ -1,18 +1,18 @@
 var iframe_config = 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen',
-    embed_config = 'type="application/x-shockwave-flash" quality="high" allowfullscreen="true"';
+    embed_config  = 'type="application/x-shockwave-flash" quality="high" allowfullscreen="true"';
 
 // ------------------------------------
 // youtube 9:16
 // ------------------------------------
 module.exports.youtube = function (args, content) {
   var id = args[0];
-  return '<div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/' + id + '" ' + iframe_config + '></iframe></div>';
+  return '<div class="owl-media owl-video owl-youtube"><iframe src="http://www.youtube.com/embed/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // niconico
 // ------------------------------------
 module.exports.niconico = function (args, content) {
-  var id = args[0],
+  var id   = args[0],
       type = args[1] || 'thumb';
   // thumb
   if (type == 'thumb') {
@@ -25,7 +25,7 @@ module.exports.niconico = function (args, content) {
 // bilibili
 // ------------------------------------
 module.exports.bilibili = function (args, content) {
-  var id = args[0].match(/^(av|)(\d+)$/),
+  var id   = args[0].match(/^(av|)(\d+)$/),
       page = args[1] || '1';
   if (id == null)
   	throw 'error! incorrect bilibibli id.';
@@ -36,7 +36,7 @@ module.exports.bilibili = function (args, content) {
 // ------------------------------------
 module.exports.vimeo = function (args, content) {
   var id = args[0];
-  return '<div class="owl-media owl-video owl-vimeo"><iframe src="//player.vimeo.com/video/' + id + '" ' + iframe_config + '></iframe></div>';
+  return '<div class="owl-media owl-video owl-vimeo"><iframe src="http://player.vimeo.com/video/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // tudou
