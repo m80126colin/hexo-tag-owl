@@ -1,0 +1,1 @@
+module.exports = 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen';

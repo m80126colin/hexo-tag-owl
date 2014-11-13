@@ -1,11 +1,10 @@
-var videos = require('./videos')
-var images = require('./images')
+var tag    = hexo.extend.tag;
 // videos
-hexo.extend.tag.register('owl-youtube',  videos.youtube);
-hexo.extend.tag.register('owl-niconico', videos.niconico);
-hexo.extend.tag.register('owl-bilibili', videos.bilibili);
-hexo.extend.tag.register('owl-vimeo',    videos.vimeo);
-hexo.extend.tag.register('owl-tudou',    videos.tudou);
-hexo.extend.tag.register('owl-youku',    videos.youku);
+tag.register('owl-youtube',  require('./videos/youtube'));
+tag.register('owl-niconico', require('./videos/niconico'));
+tag.register('owl-bilibili', require('./videos/bilibili'));
+tag.register('owl-vimeo',    require('./videos/vimeo'));
+tag.register('owl-tudou',    require('./videos/tudou'));
+tag.register('owl-youku',    require('./videos/youku'));
 // images
-hexo.extend.tag.register('owl-img',      images.local)
+tag.register('owl-img',      require('./images/local'));

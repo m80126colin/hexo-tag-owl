@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-owl",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A tag about Hexo with media plug-in.",
   "main": "index",
   "repository": {
@@ -8,14 +8,8 @@
     "url": "https://github.com/m80126colin/hexo-tag-owl.git"
   },
   "keywords": [
-    "hexo",
-    "blog",
-    "youtube",
-    "niconico",
-    "bilibili",
-    "vimeo",
-    "tudou",
-    "youku",
+    "hexo", "blog",
+    "youtube", "niconico", "bilibili", "vimeo", "tudou", "youku",
     "image"
   ],
   "author": {
