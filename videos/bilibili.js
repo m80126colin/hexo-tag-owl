@@ -1,4 +1,4 @@
-var config  = require('./config/embed.config');
+var config  = require('../config/embed.config');
 // ------------------------------------
 // bilibili
 // ------------------------------------

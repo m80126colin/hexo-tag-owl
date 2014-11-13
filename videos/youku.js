@@ -1,4 +1,4 @@
-var config = require('./config/iframe.config');
+var config = require('../config/iframe.config');
 // ------------------------------------
 // youku
 // ------------------------------------
