@@ -5,5 +5,5 @@ module.exports.local = function (args, content) {
   img_config       = {};
   img_config.src   = hexo.config.root + img_path;
   img_config.class = '';
-  return htmlTag('img', img_config);
+  return '<div class="owl-media owl-image owl-local-image">' + htmlTag('img', img_config) + '</div>';
 }
