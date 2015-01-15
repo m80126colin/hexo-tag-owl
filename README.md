@@ -1,5 +1,7 @@
 # hexo-tag-owl #
 
+[![NPM version](https://badge.fury.io/js/hexo-tag-owl.svg)](http://badge.fury.io/js/hexo-tag-owl)
+
 A tag about [Hexo] with media plug-in.
 
 ## Feature ##
