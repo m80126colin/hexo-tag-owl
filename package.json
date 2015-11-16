@@ -1,11 +1,14 @@
 {
   "name": "hexo-tag-owl",
-  "version": "0.1.4",
-  "description": "A tag about Hexo with media plug-in.",
+  "version": "1.0.0",
+  "description": "A media plug-in tag supporting Hexo 3.x.",
   "main": "index",
   "repository": {
     "type": "git",
     "url": "https://github.com/m80126colin/hexo-tag-owl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m80126colin/hexo-tag-owl/issues"
   },
   "keywords": [
     "hexo",
@@ -25,7 +28,5 @@
   "license": "MIT",
   "engines": {
     "hexo": "*"
-  },
-  "dependencies": {
   }
 }

@@ -4,14 +4,14 @@ var iframe_config = 'frameborder="0" webkitallowfullscreen mozallowfullscreen al
 // ------------------------------------
 // youtube 9:16
 // ------------------------------------
-module.exports.youtube = function (args, content) {
+module.exports.youtube = function (args) {
   var id = args[0];
   return '<div class="owl-media owl-video owl-youtube"><iframe src="http://www.youtube.com/embed/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // niconico
 // ------------------------------------
-module.exports.niconico = function (args, content) {
+module.exports.niconico = function (args) {
   var id   = args[0],
       type = args[1] || 'thumb';
   // thumb
@@ -24,7 +24,7 @@ module.exports.niconico = function (args, content) {
 // ------------------------------------
 // bilibili
 // ------------------------------------
-module.exports.bilibili = function (args, content) {
+module.exports.bilibili = function (args) {
   var id   = args[0].match(/^(av|)(\d+)$/),
       page = args[1] || '1';
   if (id == null)
@@ -34,21 +34,21 @@ module.exports.bilibili = function (args, content) {
 // ------------------------------------
 // vimeo
 // ------------------------------------
-module.exports.vimeo = function (args, content) {
+module.exports.vimeo = function (args) {
   var id = args[0];
   return '<div class="owl-media owl-video owl-vimeo"><iframe src="http://player.vimeo.com/video/' + id + '" ' + iframe_config + '></iframe></div>';
 }
 // ------------------------------------
 // tudou
 // ------------------------------------
-module.exports.tudou = function (args, content) {
+module.exports.tudou = function (args) {
   var id = args[0];
   return '<div class="owl-media owl-video owl-tudou"><embed src="http://www.tudou.com/v/' + id + '/&bid=05&resourceId=0_05_05_99/v.swf" allowscriptaccess="always" wmode="opaque" ' + embed_config + '></embed></div>';
 }
 // ------------------------------------
 // youku
 // ------------------------------------
-module.exports.youku = function (args, content) {
+module.exports.youku = function (args) {
   var id = args[0].match(/^(id_|)(.+)$/);
   return '<div class="owl-media owl-video owl-youku"><iframe src="http://player.youku.com/embed/' + id[2] + '" ' + iframe_config + '></iframe></div>';
 }
