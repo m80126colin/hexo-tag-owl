@@ -1,0 +1,1 @@
+module.exports = 'type="application/x-shockwave-flash" quality="high" allowfullscreen="true"';

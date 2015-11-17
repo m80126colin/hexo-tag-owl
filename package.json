@@ -1,7 +1,7 @@
 {
   "name": "hexo-tag-owl",
   "version": "1.0.0",
-  "description": "A media plug-in tag supporting Hexo 3.x.",
+  "description": "A media tag for Hexo 3.x",
   "main": "index",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   "keywords": [
     "hexo",
     "blog",
+    "tag",
     "youtube",
     "niconico",
     "bilibili",

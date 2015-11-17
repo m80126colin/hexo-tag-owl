@@ -1,8 +1,6 @@
 # hexo-tag-owl #
 
-[![NPM version](https://badge.fury.io/js/hexo-tag-owl.svg)](http://badge.fury.io/js/hexo-tag-owl)
-
-A tag about [Hexo] with media plug-in.
+A media tag for [Hexo] 3.x
 
 ## Feature ##
 
@@ -54,7 +52,7 @@ This component has addition class `owl-youtube`.
 #### Usage ####
 
 ```
-{% owl-youtube youtube_id %}
+{% owl youtube youtube_id %}
 ```
 
 * **youtube_id** - video id on Youtube
@@ -62,7 +60,7 @@ This component has addition class `owl-youtube`.
 #### Example ####
 
 ```
-{% owl-youtube YtuAOT_c2EA %}
+{% owl youtube YtuAOT_c2EA %}
 ```
 
 ### Niconico ###
@@ -72,7 +70,7 @@ This component has addition class `owl-niconico`.
 #### Usage ####
 
 ```
-{% owl-niconico niconico_id [type] %}
+{% owl niconico niconico_id [type] %}
 ```
 
 * **niconico_id** - video id in Niconico.
@@ -83,8 +81,8 @@ This component has addition class `owl-niconico`.
 #### Example ####
 
 ```
-{% owl-niconico sm1494658 %}
-{% owl-niconico sm1494658 watch %}
+{% owl niconico sm1494658 %}
+{% owl niconico sm1494658 watch %}
 ```
 
 ### Bilibili ###
@@ -94,7 +92,7 @@ This component has addition class `owl-bilibili`.
 #### Usage ####
 
 ```
-{% owl-bilibili bilibili_id [page] %}
+{% owl bilibili bilibili_id [page] %}
 ```
 
 * **bilibili_id** - video id in Bilibili. You can use either `av247371` or `247371`.
@@ -103,9 +101,9 @@ This component has addition class `owl-bilibili`.
 #### Example ####
 
 ```
-{% owl-bilibili av247371 %}
-{% owl-bilibili 247371 %}
-{% owl-bilibili av367901 2 %}
+{% owl bilibili av247371 %}
+{% owl bilibili 247371 %}
+{% owl bilibili av367901 2 %}
 ```
 
 ### Vimeo ###
@@ -115,7 +113,7 @@ This component has addition class `owl-vimeo`.
 #### Usage ####
 
 ```
-{% owl-vimeo vimeo_id %}
+{% owl vimeo vimeo_id %}
 ```
 
 * **vimeo_id** - video id in Vimeo.
@@ -123,7 +121,7 @@ This component has addition class `owl-vimeo`.
 #### Example ####
 
 ```
-{% owl-vimeo 5566538 %}
+{% owl vimeo 5566538 %}
 ```
 
 ### Tudou ###
@@ -133,7 +131,7 @@ This component has addition class `owl-tudou`.
 #### Usage ####
 
 ```
-{% owl-tudou tudou_id %}
+{% owl tudou tudou_id %}
 ```
 
 * **tudou_id** - video id in Tudou.
@@ -141,7 +139,7 @@ This component has addition class `owl-tudou`.
 #### Example ####
 
 ```
-{% owl-tudou pRsx83aRLLs %}
+{% owl tudou pRsx83aRLLs %}
 ```
 
 ### Youku ###
@@ -151,7 +149,7 @@ This component has addition class `owl-youku`.
 #### Usage ####
 
 ```
-{% owl-youku youku_id %}
+{% owl youku youku_id %}
 ```
 
 * **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
@@ -159,7 +157,7 @@ This component has addition class `owl-youku`.
 #### Example ####
 
 ```
-{% owl-youku id_XMTc3MzcxMjQw %}
+{% owl youku id_XMTc3MzcxMjQw %}
 ```
 
 ## Images ##
@@ -171,7 +169,7 @@ Insert your image from blog\'s path.
 #### Usage ####
 
 ```
-{% owl-img image_path %}
+{% owl img image_path %}
 ```
 
 * **image_path** - relative path from your blog.
@@ -179,8 +177,8 @@ Insert your image from blog\'s path.
 #### Example ####
 
 ```
-{% owl-img img/img.jpg %}
-{% owl-img another-img.gif %}
+{% owl local img/img.jpg %}
+{% owl local another-img.gif %}
 ```
 
 ## Sample Stylus ##
