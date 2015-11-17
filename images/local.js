@@ -1,9 +1,10 @@
-var htmlTag = hexo.util.html_tag;
+var util = require('hexo-util');
+var path = require('path');
 
-module.exports = function (args, content) {
+module.exports = function (args, root) {
   var img_path = args[0];
-  img_config       = {};
-  img_config.src   = hexo.config.root + img_path;
-  img_config.class = '';
-  return htmlTag('img', img_config);
+  var config  = {
+    src: root + img_path
+  }
+  return util.htmlTag('img', config);
 }

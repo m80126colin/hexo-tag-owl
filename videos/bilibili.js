@@ -2,7 +2,7 @@ var config  = require('../config/embed.config');
 // ------------------------------------
 // bilibili
 // ------------------------------------
-module.exports = function (args, content) {
+module.exports = function (args) {
   var id   = args[0].match(/^(av|)(\d+)$/),
       page = args[1] || '1';
   if (id == null)

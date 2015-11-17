@@ -2,7 +2,7 @@ var config = require('../config/iframe.config');
 // ------------------------------------
 // niconico
 // ------------------------------------
-module.exports = function (args, content) {
+module.exports = function (args) {
   var id   = args[0],
       type = args[1] || 'thumb',
       res  = '';

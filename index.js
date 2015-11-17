@@ -1,10 +1,41 @@
-var tag    = hexo.extend.tag;
-// videos
-tag.register('owl-youtube',  require('./videos/youtube'));
-tag.register('owl-niconico', require('./videos/niconico'));
-tag.register('owl-bilibili', require('./videos/bilibili'));
-tag.register('owl-vimeo',    require('./videos/vimeo'));
-tag.register('owl-tudou',    require('./videos/tudou'));
-tag.register('owl-youku',    require('./videos/youku'));
-// images
-tag.register('owl-img',      require('./images/local'));
+var tag_list = {
+  videos: {
+    path: ['.', 'videos'],
+    tags: ['youtube', 'niconico', 'bilibili', 'vimeo', 'tudou', 'youku']
+  },
+  images: {
+    path: ['.', 'images'],
+    tags: ['local']
+  }
+};
+
+function optionSelector() {
+  this.list = {};
+}
+optionSelector.prototype.register = function(tag, callback) {
+  var opt = this;
+  opt.list[tag] = callback;
+};
+optionSelector.prototype.handler  = function(tag) {
+  return this.list[tag];
+}
+
+selector = new optionSelector();
+
+Object.keys(tag_list).map(function (type) {
+  var load_path = tag_list[type].path.join('/');
+  tag_list[type].tags.map(function (tag) {
+    selector.register( tag, require(load_path + '/' + tag) );
+  })
+});
+
+var root = hexo.config.root;
+
+hexo.extend.tag.register('owl', function (args) {
+  var tag  = args[0];
+  var arg  = args.slice(1);
+  var func = selector.handler(tag);
+  if (func)
+    return func(arg, root);
+  return '';
+})

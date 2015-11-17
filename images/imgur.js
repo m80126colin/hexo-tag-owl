@@ -1,5 +1,3 @@
-
-
 module.exports = function (args, contents) {
   var id     = args[0],
       mode   = args[1] || 'photo',
