@@ -1,5 +1,9 @@
 # hexo-tag-owl #
 
+[![NPM version](https://badge.fury.io/js/hexo-tag-owl.svg)](http://badge.fury.io/js/hexo-tag-owl)
+[![Code Climate](https://codeclimate.com/github/m80126colin/hexo-tag-owl.png)](https://codeclimate.com/github/m80126colin/hexo-tag-owl)
+[![License](http://img.shields.io/npm/l/hexo-tag-owl.svg)](LICENSE.md)
+
 A media tag for [Hexo] 3.x
 
 ## Feature ##
