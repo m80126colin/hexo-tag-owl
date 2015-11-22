@@ -7,7 +7,7 @@ module.exports = function (args) {
       type = args[1] || 'thumb',
       res  = '';
   if (type == 'thumb') {
-  	// thumb
+    // thumb
     res += '<div class="owl-media owl-video owl-niconico niconico-thumb"><iframe src="http://ext.nicovideo.jp/thumb/' + id + '" scrolling="no" ' + config + '></iframe></div>';
   }
   else {
