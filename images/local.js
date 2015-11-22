@@ -6,5 +6,5 @@ module.exports = function (args, root) {
   var config  = {
     src: root + img_path
   }
-  return util.htmlTag('img', config);
+  return '<div class="owl-media owl-image owl-local">' + util.htmlTag('img', config) + '</div>';
 }
