@@ -29,5 +29,8 @@
   "license": "MIT",
   "engines": {
     "hexo": "*"
+  },
+  "dependencies": {
+    "hexo-util": "^0.5.3"
   }
 }

@@ -173,7 +173,7 @@ Insert your image from blog\'s path.
 #### Usage ####
 
 ```
-{% owl img image_path %}
+{% owl local image_path %}
 ```
 
 * **image_path** - relative path from your blog.

@@ -1,10 +1,10 @@
 var tag_list = {
   videos: {
-    path: ['.', 'videos'],
+    path: ['.', 'lib', 'videos'],
     tags: ['youtube', 'niconico', 'bilibili', 'vimeo', 'tudou', 'youku']
   },
   images: {
-    path: ['.', 'images'],
+    path: ['.', 'lib', 'images'],
     tags: ['local']
   }
 };
