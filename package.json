@@ -1,8 +1,8 @@
 {
   "name": "hexo-tag-owl",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A media tag for Hexo 3.x",
-  "main": "index",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/m80126colin/hexo-tag-owl.git"
@@ -29,5 +29,9 @@
   "license": "MIT",
   "engines": {
     "hexo": "*"
+  },
+  "dependencies": {
+    "hexo-util": "^0.5.3",
+    "stylus": "^0.54.2"
   }
 }
