@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/m80126colin/hexo-tag-owl.png)](https://codeclimate.com/github/m80126colin/hexo-tag-owl)
 [![License](http://img.shields.io/npm/l/hexo-tag-owl.svg)](LICENSE.md)
 
-An useful media tag for [Hexo] 3.x
+An useful media tag for [Hexo] 3.x, [Demo page]
 
 ## Feature ##
 
@@ -157,3 +157,4 @@ $nico-thumb-padding = 0.61 * $nico-thumb-width
 ```
 
 [Hexo]: https://hexo.io
+[Demo page]: http://m80126colin.github.io/hexo-tag-owl-demo/
