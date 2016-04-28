@@ -18,7 +18,7 @@ An useful media tag for [Hexo] 3.x, [Demo page]
   * [Youku](http://www.youku.com/)
 * Support images sources:
   * Local images
-  * Imgur
+* Auto stylesheet embedding
 
 ## Installation ##
 
@@ -30,11 +30,24 @@ npm install hexo-tag-owl --save
 
 ## Introduction ##
 
+### Component Concept ###
+
 All components are wrapped by a `<div>` tag with several classes. All components have at least one class `.owl-media`:
 
 ```
 <div class="owl-media">[component]</div>
 ```
+
+### Auto Stylesheet Embedding ###
+
+```
+owl:
+  css: default
+  file: owl
+```
+
+* **css**: decide whether insert default stylesheet or not, with value `default` or `none`.
+* **file**: the path of stylesheet when **css** is `default`, and default value is `root + owl.css`
 
 ## Videos ##
 
@@ -93,6 +106,12 @@ Each videos source will add additional class `.owl-[source]`:
 
 ## Images ##
 
+Every components of this category have additional class `.owl-image`.
+
+```
+<div class="owl-media owl-image">[component]</div>
+```
+
 ### Local Images ###
 
 Insert your image from blog\'s path.
@@ -140,20 +159,20 @@ $nico-thumb-padding = 0.61 * $nico-thumb-width
     width: 100%
     height: 100%
     margin-top: 0
-  .niconico-thumb
-    position: relative
-    padding-top: 0
-    max-width: $nico-thumb-width
-    padding-top: $nico-thumb-padding
-    height: 0
-    border: solid $nico-thumb-border #ccc
-    iframe, object, embed
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      margin-top: 0
+.niconico-thumb
+  position: relative
+  padding-top: 0
+  max-width: $nico-thumb-width
+  padding-top: $nico-thumb-padding
+  height: 0
+  border: solid $nico-thumb-border #ccc
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    margin-top: 0
 ```
 
 [Hexo]: https://hexo.io

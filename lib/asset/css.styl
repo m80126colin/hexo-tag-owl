@@ -2,11 +2,16 @@
 $padding-ratio = 56.25%
 // margin
 $video-margin = 1rem
+$image-margin = 1rem
 // nico thumb config
 $nico-thumb-width = 20rem
 $nico-thumb-border = 0.1rem
 $nico-thumb-padding = 0.61 * $nico-thumb-width
 
+.owl-image
+  position: relative
+  margin-top: $image-margin
+  margin-bottom: $image-margin
 .owl-video
   position: relative
   padding-top: $padding-ratio
@@ -21,17 +26,17 @@ $nico-thumb-padding = 0.61 * $nico-thumb-width
     width: 100%
     height: 100%
     margin-top: 0
-  .niconico-thumb
-    position: relative
-    padding-top: 0
-    max-width: $nico-thumb-width
-    padding-top: $nico-thumb-padding
-    height: 0
-    border: solid $nico-thumb-border #ccc
-    iframe, object, embed
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      margin-top: 0
+.niconico-thumb
+  position: relative
+  padding-top: 0
+  max-width: $nico-thumb-width
+  padding-top: $nico-thumb-padding
+  height: 0
+  border: solid $nico-thumb-border #ccc
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    margin-top: 0
