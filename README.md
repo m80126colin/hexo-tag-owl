@@ -6,7 +6,7 @@
 
 An useful media tag for [Hexo] 3.x, [Demo page]
 
-## Feature ##
+## Features ##
 
 * Various videos and images sources embedding
 * Support videos website:
@@ -16,6 +16,7 @@ An useful media tag for [Hexo] 3.x, [Demo page]
   * [Vimeo](https://vimeo.com/)
   * [Tudou](http://www.tudou.com/)
   * [Youku](http://www.youku.com/)
+  * [Tencent](http://v.qq.com/)
 * Support images sources:
   * Local images
 * Auto stylesheet embedding
@@ -65,6 +66,7 @@ Each videos source will add additional class `.owl-[source]`:
 * Vimeo: `.owl-vimeo`
 * Tudou: `.owl-tudou`
 * Youku: `.owl-youku`
+* Tencent: `.owl-tencent`
 
 ### Usage ###
 
@@ -75,6 +77,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl vimeo vimeo_id %}
 {% owl tudou tudou_id %}
 {% owl youku youku_id %}
+{% owl tencent tencent_id %}
 ```
 
 * **youtube_id** - video id on Youtube
@@ -89,6 +92,7 @@ Each videos source will add additional class `.owl-[source]`:
   * **page** - if video have several clips, you can add a number indicated the video.
 * **tudou_id** - video id in Tudou.
 * **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
+* **tencent_id** - video id in Tencent Video.
 
 ### Examples ###
 
@@ -102,6 +106,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl vimeo 5566538 %}
 {% owl tudou pRsx83aRLLs %}
 {% owl youku id_XMTc3MzcxMjQw %}
+{% owl tencent o03134mlm8j %}
 ```
 
 ## Images ##
@@ -131,49 +136,17 @@ Insert your image from blog\'s path.
 {% owl local another-img.gif %}
 ```
 
-## Sample Stylus ##
+## Default CSS ##
 
-Because the components are lack of CSS, everyone can add some CSS for one's preference. Here is the sample CSS written in stylus:
+Because the components are lack of CSS, everyone can add some CSS for one's preference. Here provide a default CSS written in stylus in `lib/asset/css.styl`.
 
-``` stylus
-// 16:9 ratio
-$padding-ratio = 56.25%
-// margin
-$video-margin = 1rem
-// nico thumb config
-$nico-thumb-width = 20rem
-$nico-thumb-border = 0.1rem
-$nico-thumb-padding = 0.61 * $nico-thumb-width
+## Contributors ##
 
-.owl-video
-  position: relative
-  padding-top: $padding-ratio
-  margin-top: $video-margin
-  margin-bottom: $video-margin
-  height: 0
-  overflow: hidden
-  iframe, object, embed
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    margin-top: 0
-.niconico-thumb
-  position: relative
-  padding-top: 0
-  max-width: $nico-thumb-width
-  padding-top: $nico-thumb-padding
-  height: 0
-  border: solid $nico-thumb-border #ccc
-  iframe, object, embed
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    margin-top: 0
-```
+* Tao Wang: Tencent (騰訊視頻) plugin function
+
+## License ##
+
+MIT
 
 [Hexo]: https://hexo.io
 [Demo page]: http://m80126colin.github.io/hexo-tag-owl-demo/
