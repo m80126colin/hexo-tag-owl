@@ -44,7 +44,7 @@ All components are wrapped by a `<div>` tag with several classes. All components
 ```
 owl:
   css: default
-  file: owl
+  file: owl.css
 ```
 
 * **css**: decide whether insert default stylesheet or not, with value `default` or `none`.
