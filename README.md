@@ -16,6 +16,7 @@ An useful media tag for [Hexo] 3.x, [Demo page]
   * [Vimeo](https://vimeo.com/)
   * [Tudou](http://www.tudou.com/)
   * [Youku](http://www.youku.com/)
+  * [Tencent](http://v.qq.com/)
 * Support images sources:
   * Local images
 * Auto stylesheet embedding
@@ -65,6 +66,7 @@ Each videos source will add additional class `.owl-[source]`:
 * Vimeo: `.owl-vimeo`
 * Tudou: `.owl-tudou`
 * Youku: `.owl-youku`
+* Tencent: `.owl-tencent`
 
 ### Usage ###
 
@@ -75,6 +77,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl vimeo vimeo_id %}
 {% owl tudou tudou_id %}
 {% owl youku youku_id %}
+{% owl tencent tencent_id %}
 ```
 
 * **youtube_id** - video id on Youtube
@@ -89,6 +92,7 @@ Each videos source will add additional class `.owl-[source]`:
   * **page** - if video have several clips, you can add a number indicated the video.
 * **tudou_id** - video id in Tudou.
 * **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
+* **tencent_id** - video id in Tencent Video.
 
 ### Examples ###
 
@@ -102,6 +106,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl vimeo 5566538 %}
 {% owl tudou pRsx83aRLLs %}
 {% owl youku id_XMTc3MzcxMjQw %}
+{% owl tencent o03134mlm8j %}
 ```
 
 ## Images ##
