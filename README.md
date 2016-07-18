@@ -9,7 +9,7 @@ An useful media tag for [Hexo] 3.x, [Demo page]
 ## Features ##
 
 * Various videos and images sources embedding
-* Support videos website:
+* Support videos website
   * [Youtube](https://www.youtube.com/)
   * [Niconico](http://www.nicovideo.jp/)
   * [Bilibili](http://www.bilibili.com/)
@@ -17,8 +17,9 @@ An useful media tag for [Hexo] 3.x, [Demo page]
   * [Tudou](http://www.tudou.com/)
   * [Youku](http://www.youku.com/)
   * [Tencent](http://v.qq.com/)
-* Support images sources:
+* Support images sources
   * Local images
+  * [Giphy](http://giphy.com/)
 * Auto stylesheet embedding
 
 ## Installation ##
@@ -41,14 +42,20 @@ All components are wrapped by a `<div>` tag with several classes. All components
 
 ### Auto Stylesheet Embedding ###
 
+Because the components are lack of CSS, everyone can add some CSS for one's preference. Here provide a default CSS written in stylus at `lib/asset/css.styl`.
+
 ```
 owl:
   css: default
   file: owl.css
 ```
 
-* **css**: decide whether insert default stylesheet or not, with value `default` or `none`.
-* **file**: the path of stylesheet when **css** is `default`, and default value is `root + owl.css`
+* **css**: whether insert default stylesheet or not, with following values
+  * `default`: use default stylesheet at `lib/asset/css.styl`
+  * `custom`: use custom stylesheet with path at **file**
+  * `none`: unable this feature
+  * default values: `none`
+* **file**: assign the path of stylesheet when **css** is not `none`, and default value is `owl.css`
 
 ## Videos ##
 
@@ -136,9 +143,23 @@ Insert your image from blog\'s path.
 {% owl local another-img.gif %}
 ```
 
-## Default CSS ##
+### Giphy ###
 
-Because the components are lack of CSS, everyone can add some CSS for one's preference. Here provide a default CSS written in stylus in `lib/asset/css.styl`.
+Insert your gif from Giphy.
+
+#### Usage ####
+
+```
+{% owl giphy giphy_id %}
+```
+
+* **giphy_id** - giphy id
+
+#### Example ####
+
+```
+{% owl giphy AxqJJOBkWHXW %}
+```
 
 ## Contributors ##
 
