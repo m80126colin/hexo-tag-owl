@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-owl",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A media tag for Hexo 3.x",
   "main": "lib/index.js",
   "repository": {
@@ -14,6 +14,7 @@
     "hexo",
     "blog",
     "tag",
+    "video",
     "youtube",
     "niconico",
     "bilibili",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "hexo-util": "^0.5.3",
+    "object-assign": "^4.1.0",
     "stylus": "^0.54.2"
   }
 }
