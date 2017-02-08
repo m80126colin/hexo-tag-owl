@@ -170,7 +170,8 @@ Insert your gif from Giphy.
 
 ## Contributors ##
 
-* Tao Wang: Tencent (騰訊視頻) plugin function
+* [Tao Wang](https://github.com/twang2218): Tencent (騰訊視頻) plugin function
+* [Riff](https://github.com/r12f): TED videos plugin support
 
 ## License ##
 

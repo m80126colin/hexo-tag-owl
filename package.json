@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-owl",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A media tag for Hexo 3.x",
   "main": "lib/index.js",
   "repository": {
