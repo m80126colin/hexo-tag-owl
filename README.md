@@ -17,6 +17,7 @@ An useful media tag for [Hexo] 3.x, [Demo page]
   * [Tudou](http://www.tudou.com/)
   * [Youku](http://www.youku.com/)
   * [Tencent](http://v.qq.com/)
+  * [TED](http://www.ted.com/)
 * Support images sources
   * Local images
   * [Giphy](http://giphy.com/)
@@ -74,6 +75,7 @@ Each videos source will add additional class `.owl-[source]`:
 * Tudou: `.owl-tudou`
 * Youku: `.owl-youku`
 * Tencent: `.owl-tencent`
+* TED: `.owl-ted`
 
 ### Usage ###
 
@@ -85,6 +87,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl tudou tudou_id %}
 {% owl youku youku_id %}
 {% owl tencent tencent_id %}
+{% owl ted ted_id [lang] %}
 ```
 
 * **youtube_id** - video id on Youtube
@@ -100,6 +103,9 @@ Each videos source will add additional class `.owl-[source]`:
 * **tudou_id** - video id in Tudou.
 * **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
 * **tencent_id** - video id in Tencent Video.
+* TED
+  * **ted_id** - video id in TED.
+  * **lang** - subtitle language for TED videos.
 
 ### Examples ###
 
@@ -114,6 +120,7 @@ Each videos source will add additional class `.owl-[source]`:
 {% owl tudou pRsx83aRLLs %}
 {% owl youku id_XMTc3MzcxMjQw %}
 {% owl tencent o03134mlm8j %}
+{% owl ted gero_miesenboeck zh-cn %}
 ```
 
 ## Images ##
