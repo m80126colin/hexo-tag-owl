@@ -82,11 +82,11 @@ Each videos source will add additional class `.owl-[source]`:
 ```
 {% owl youtube youtube_id %}
 {% owl niconico niconico_id [type] %}
-{% owl bilibili bilibili_id [page] %}
+{% owl bilibili bilibili_id [page] [height] [width] %}
 {% owl vimeo vimeo_id %}
 {% owl tudou tudou_id %}
-{% owl youku youku_id %}
-{% owl tencent tencent_id %}
+{% owl youku youku_id [height] [width] %}
+{% owl tencent tencent_id [height] [width] %}
 {% owl ted ted_id [lang] %}
 ```
 
@@ -98,11 +98,17 @@ Each videos source will add additional class `.owl-[source]`:
     * `thumb`: set nico in thumb mode with extra class `.niconico-thumb`
     * `watch`: set nico in watch mode with extra class `.niconico-watch`
 * Bilibili
-  * **bilibili_id** - video id in Bilibili. You can use either `av247371` or `247371`.
+  * **bilibili_id** - video id in Bilibili. You can use either `av247371` or `247371`  or `BV14b41177YA`  or `14b41177YA`.
   * **page** - if video have several clips, you can add a number indicated the video.
+  * **Width** - Width of video. eg. `544`
+  * **height** - Height of video. eg. `452`
 * **tudou_id** - video id in Tudou.
 * **youku_id** - video id in Youku. You can use either `id_XMTc3MzcxMjQw` or `XMTc3MzcxMjQw`.
+  * **Width** - Width of video. eg. `100%`
+  * **height** - Height of video. eg. `452px`
 * **tencent_id** - video id in Tencent Video.
+  * **Width** - Width of video. eg. `100%`
+  * **height** - Height of video. eg. `452`
 * TED
   * **ted_id** - video id in TED.
   * **lang** - subtitle language for TED videos.
